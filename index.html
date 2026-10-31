@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CleanerPlace Limited | Waste Management & Cleaning Services in Abuja, Nigeria</title>
-<meta name="description" content="CleanerPlace Limited (RC 9178827) is a registered waste management and cleaning company based in Abuja, Nigeria, serving Maitama, Jahi, Wuse, Guzape, Katampe & Asokoro. Get a free quote today." />
+<title>CleanerPlace Limited | Waste Management & Cleaning Services in Yola, Adamawa State</title>
+<meta name="description" content="CleanerPlace Limited (RC 9178827) is a registered Nigerian waste management and cleaning company launching in Yola, Adamawa State in January 2027, with Abuja coming soon. Get a free quote today." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://cleanerplaceltd.com/" />
 <meta name="theme-color" content="#1F7463" />
@@ -12,16 +12,16 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CleanerPlace Limited" />
-<meta property="og:title" content="CleanerPlace Limited | Waste Management & Cleaning Services in Abuja, Nigeria" />
-<meta property="og:description" content="CleanerPlace Limited (RC 9178827) is a registered waste management and cleaning company based in Abuja, Nigeria, serving Maitama, Jahi, Wuse, Guzape, Katampe & Asokoro. Get a free quote today." />
+<meta property="og:title" content="CleanerPlace Limited | Waste Management & Cleaning Services in Yola, Adamawa State" />
+<meta property="og:description" content="CleanerPlace Limited (RC 9178827) is a registered Nigerian waste management and cleaning company launching in Yola, Adamawa State in January 2027, with Abuja coming soon. Get a free quote today." />
 <meta property="og:url" content="https://cleanerplaceltd.com/" />
 <meta property="og:image" content="https://cleanerplaceltd.com/apple-touch-icon.png" />
 <meta property="og:locale" content="en_NG" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="CleanerPlace Limited | Waste Management & Cleaning Services in Abuja, Nigeria" />
-<meta name="twitter:description" content="CleanerPlace Limited (RC 9178827) is a registered waste management and cleaning company based in Abuja, Nigeria, serving Maitama, Jahi, Wuse, Guzape, Katampe & Asokoro. Get a free quote today." />
+<meta name="twitter:title" content="CleanerPlace Limited | Waste Management & Cleaning Services in Yola, Adamawa State" />
+<meta name="twitter:description" content="CleanerPlace Limited (RC 9178827) is a registered Nigerian waste management and cleaning company launching in Yola, Adamawa State in January 2027, with Abuja coming soon. Get a free quote today." />
 <meta name="twitter:image" content="https://cleanerplaceltd.com/apple-touch-icon.png" />
 
 <link rel="shortcut icon" href="favicon.ico" />
@@ -143,12 +143,6 @@
   .stat-card { transition: transform 280ms cubic-bezier(0.34, 1.56, 0.64, 1); }
   .stat-card:hover { transform: translateY(-4px); }
 
-  .underline-grow { position: relative; }
-  .underline-grow::after {
-    content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px;
-    width: 56px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #1F7463, #F4B400);
-  }
-
   .marquee-track { animation: scroll-left 28s linear infinite; }
   @keyframes scroll-left { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
@@ -162,7 +156,7 @@
 
   .mobile-menu { transition: max-height 320ms ease, opacity 280ms ease; }
 
-  section[id] { scroll-margin-top: 100px; }
+  section[id], .card-service[id] { scroll-margin-top: 110px; }
 
   @keyframes float-blob-1 {
     0%, 100% { transform: translate(0, 0) scale(1); }
@@ -179,6 +173,12 @@
   .hero-blob-1 { animation: float-blob-1 15s ease-in-out infinite; }
   .hero-blob-2 { animation: float-blob-2 19s ease-in-out infinite; }
   .hero-blob-3 { animation: float-blob-3 17s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-blob-1, .hero-blob-2, .hero-blob-3,
+    .card-service, .stat-card, .icon-chip, .img-treat img, .btn-primary, .btn-secondary { animation: none !important; transform: none !important; }
+  }
+
+  input::placeholder, textarea::placeholder { color: #6b7280; opacity: 1; }
 
   @keyframes viora-logo-float {
     0%, 100% { transform: translateY(0) scale(1); }
@@ -266,8 +266,8 @@
   "name": "CleanerPlace Limited",
   "legalName": "CleanerPlace Limited",
   "alternateName": "CleanerPlace",
-  "description": "CleanerPlace Limited delivers reliable waste collection, recycling, and residential, commercial and post-construction cleaning services across Abuja, Nigeria.",
-  "disambiguatingDescription": "CleanerPlace Limited is a company registered in Nigeria (CAC RC 9178827), based in Abuja. It is a separate, unaffiliated company from CleanerPlace Ltd (CleanerPlace Malta), which operates in Malta.",
+  "description": "CleanerPlace Limited delivers reliable waste collection, recycling, and residential, commercial and post-construction cleaning services in Yola, Adamawa State, Nigeria, launching January 2027. Abuja is coming soon.",
+  "disambiguatingDescription": "CleanerPlace Limited is a company registered in Nigeria (CAC RC 9178827), launching in Yola, Adamawa State. It is a separate, unaffiliated company from CleanerPlace Ltd (CleanerPlace Malta), which operates in Malta.",
   "identifier": {
     "@type": "PropertyValue",
     "name": "CAC Registration Number (RC)",
@@ -285,17 +285,20 @@
   "logo": "https://cleanerplaceltd.com/apple-touch-icon.png",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Suite 111, Fabdal Plaza, off Constantine Street, Wuse Zone 4",
-    "addressLocality": "Abuja",
+    "addressLocality": "Yola",
+    "addressRegion": "Adamawa State",
     "addressCountry": "NG"
   },
   "areaServed": [
-    { "@type": "Place", "name": "Maitama, Abuja" },
-    { "@type": "Place", "name": "Jahi, Abuja" },
-    { "@type": "Place", "name": "Katampe, Abuja" },
-    { "@type": "Place", "name": "Guzape, Abuja" },
-    { "@type": "Place", "name": "Wuse, Abuja" },
-    { "@type": "Place", "name": "Asokoro, Abuja" }
+    { "@type": "City", "name": "Yola, Adamawa State" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }
   ],
   "sameAs": [
     "https://www.facebook.com/share/1E7SGkbfkg/?mibextid=wwXIfr",
@@ -323,9 +326,9 @@
 <!-- ============ HEADER ============ -->
 <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-green-100">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="flex items-center justify-between h-24">
+    <div class="flex items-center justify-between h-16 lg:h-24">
       <a href="#top" class="flex items-center gap-3 shrink-0">
-        <img src="brand_assets/cleanerplace-logo.png" alt="CleanerPlace Limited" class="h-20 w-auto object-contain" />
+        <img src="brand_assets/cleanerplace-logo.png" alt="CleanerPlace Limited" class="h-12 lg:h-20 w-auto object-contain" />
       </a>
 
       <nav class="hidden lg:flex items-center gap-9 font-body text-[15px] font-medium text-ink">
@@ -333,7 +336,6 @@
         <a href="#viora" class="nav-link">Viora</a>
         <a href="#about" class="nav-link">About Us</a>
         <a href="#process" class="nav-link">How It Works</a>
-        <a href="#impact" class="nav-link">Our Impact</a>
         <a href="#faq" class="nav-link">FAQ</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
@@ -349,13 +351,12 @@
       </button>
     </div>
 
-    <div id="mobileMenu" class="mobile-menu overflow-hidden max-h-0 opacity-0 lg:hidden">
+    <div id="mobileMenu" inert class="mobile-menu overflow-hidden max-h-0 opacity-0 lg:hidden">
       <nav class="flex flex-col gap-1 pb-6 font-body text-base font-medium text-ink">
         <a href="#services" class="py-2.5 border-b border-green-50">Services</a>
         <a href="#viora" class="py-2.5 border-b border-green-50">Viora</a>
         <a href="#about" class="py-2.5 border-b border-green-50">About Us</a>
         <a href="#process" class="py-2.5 border-b border-green-50">How It Works</a>
-        <a href="#impact" class="py-2.5 border-b border-green-50">Our Impact</a>
         <a href="#faq" class="py-2.5 border-b border-green-50">FAQ</a>
         <a href="#contact" class="py-2.5 border-b border-green-50">Contact</a>
         <a href="#contact" class="btn-primary mt-4 px-5 py-3 rounded-full text-sm font-semibold text-center">Get a Free Quote</a>
@@ -379,16 +380,9 @@
   <div class="relative max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 lg:pt-24 lg:pb-32">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <div>
-        <div class="inline-flex bg-white rounded-3xl shadow-float p-4 mb-8">
-          <img src="brand_assets/cleanerplace-logo.png" alt="CleanerPlace Limited" class="h-28 sm:h-32 w-auto object-contain" />
-        </div>
-
         <span class="inline-flex items-center gap-2 max-w-full bg-white/10 border border-white/15 text-gold-300 text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-full font-body">
-          <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          <span class="truncate">
-            <span class="sm:hidden">Trusted Partner</span>
-            <span class="hidden sm:inline">Trusted Waste &amp; Recycling Partner</span>
-          </span>
+          <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span class="truncate">Launching in Yola, January 2027</span>
         </span>
 
         <span class="mt-3 inline-flex items-center gap-2 max-w-full bg-white/10 border border-white/15 text-white/80 text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-full font-body">
@@ -410,25 +404,12 @@
           <a href="#services" class="px-7 py-3.5 rounded-full text-base font-semibold font-body text-white border border-white/25 hover:bg-white/10 transition-colors">Explore Services</a>
         </div>
 
-        <div class="mt-12 grid grid-cols-3 gap-3 sm:gap-8 max-w-md">
-          <div>
-            <p class="font-display font-bold text-2xl sm:text-3xl text-white"><span class="counter" data-target="400">0</span>+</p>
-            <p class="text-white/55 text-xs sm:text-sm font-body mt-1">Tons Recycled</p>
-          </div>
-          <div class="border-l border-white/15 pl-3 sm:pl-8">
-            <p class="font-display font-bold text-2xl sm:text-3xl text-white"><span class="counter" data-target="8">0</span></p>
-            <p class="text-white/55 text-xs sm:text-sm font-body mt-1">Communities Served</p>
-          </div>
-          <div class="border-l border-white/15 pl-3 sm:pl-8">
-            <p class="font-display font-bold text-2xl sm:text-3xl text-white"><span class="counter" data-target="98">0</span>%</p>
-            <p class="text-white/55 text-xs sm:text-sm font-body mt-1">Client Satisfaction</p>
-          </div>
-        </div>
+        <p class="mt-8 text-white/70 text-sm font-body">Open every day, 7am to 7pm. Abuja is coming soon.</p>
       </div>
 
       <div class="relative">
-        <div id="hero-particle-box" class="relative rounded-3xl shadow-soft-lg overflow-hidden h-[420px] lg:h-[520px]" style="background: linear-gradient(135deg, #1F7463 0%, #113f39 100%);">
-          <svg id="cleanScene" class="absolute inset-0 w-full h-full z-10" viewBox="0 0 320 380" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <div class="relative rounded-3xl shadow-soft-lg overflow-hidden h-[340px] sm:h-[420px] lg:h-[520px]" style="background: linear-gradient(135deg, #1F7463 0%, #113f39 100%);">
+          <svg id="cleanScene" class="absolute inset-0 w-full h-full z-10" role="img" aria-label="Animated illustration: a broom sweeps while a rubbish bag is tossed into a CleanerPlace bin" viewBox="0 0 320 380" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="handleGrad" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0%" stop-color="#fde9a8"/>
@@ -515,21 +496,6 @@
           </svg>
         </div>
 
-        <div class="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-float p-5 w-56 hidden sm:block">
-          <div class="flex items-center gap-3">
-            <div class="w-11 h-11 rounded-xl bg-green-50 flex items-center justify-center shrink-0">
-              <svg class="w-5.5 h-5.5 text-green-500" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582M20 20v-5h-.581M4.581 9A8 8 0 0119 7m1 4a8 8 0 01-14.419 3"/></svg>
-            </div>
-            <div>
-              <p class="font-display font-bold text-sm text-ink">100% Eco-Certified</p>
-              <p class="text-xs text-ink/55 font-body">Verified sustainable process</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="absolute -top-6 -right-6 bg-gold-500 rounded-2xl shadow-float p-4 hidden sm:block">
-          <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m6.36.64l-1.42 1.42M21 12h-2M5 12H3m2.64-6.36L4.22 4.22M12 19v2m6.36-.64l-1.42-1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
-        </div>
       </div>
     </div>
   </div>
@@ -538,13 +504,10 @@
 <!-- ============ LOGO / TRUST STRIP ============ -->
 <section class="bg-green-50 border-b border-green-100 py-6 overflow-hidden">
   <div class="fade-up max-w-7xl mx-auto px-6 lg:px-8">
-    <p class="text-center text-xs font-semibold uppercase tracking-wider text-navy-500/60 font-body mb-5">Serving homes, businesses &amp; municipal partners across Abuja</p>
-    <div class="flex flex-wrap justify-center items-center gap-x-14 gap-y-4 text-navy-500/40 font-display font-bold text-lg">
-      <span>Maitama</span>
-      <span>Jahi</span>
-      <span>Katampe</span>
-      <span>Guzape</span>
-      <span>Wuse</span>
+    <p class="text-center text-xs font-semibold uppercase tracking-wider text-navy-500/75 font-body mb-5">Where we work: homes, businesses &amp; municipal partners</p>
+    <div class="flex flex-wrap justify-center items-center gap-x-14 gap-y-3 font-display font-bold text-lg text-navy-900">
+      <span>Yola, Adamawa State <span class="ml-2 align-middle text-xs font-body font-semibold uppercase tracking-wider text-green-700 bg-white border border-green-200 rounded-full px-3 py-1">Launching January 2027</span></span>
+      <span>Abuja <span class="ml-2 align-middle text-xs font-body font-semibold uppercase tracking-wider text-gold-800 bg-gold-50 border border-gold-200 rounded-full px-3 py-1">Coming Soon</span></span>
     </div>
   </div>
 </section>
@@ -554,74 +517,74 @@
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="fade-up max-w-2xl mx-auto text-center">
       <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">What We Do</span>
-      <h2 class="underline-grow inline-block mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">Services Built Around Your Community</h2>
-      <p class="mt-8 text-ink/65 leading-relaxed-body font-body">From weekly waste pickup to citywide recycling programs, our crews show up and get it done, every time.</p>
+      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">Services Built Around Your Community</h2>
+      <p class="mt-6 text-ink/75 leading-relaxed-body font-body">From weekly waste pickup to citywide recycling programs, our crews show up and get it done, every time.</p>
     </div>
 
     <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-waste-collection" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h13l3 4v6h-3M3 7v10h13M3 7l2-3h9l2 3M7 20a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Waste Collection</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">Set a pickup day and we'll be there, for homes and businesses alike.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">Set a pickup day and we'll be there, for homes and businesses alike.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-recycling-programs" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582M20 20v-5h-.581M4.581 9A8 8 0 0119 7m1 4a8 8 0 01-14.419 3"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Recycling Programs</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">We sort what can be recycled and get it back into use instead of a landfill.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">We sort what can be recycled and get it back into use instead of a landfill.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-commercial-cleaning" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 21V8a1 1 0 011-1h4V4a1 1 0 011-1h4a1 1 0 011 1v3h4a1 1 0 011 1v13M4 21h16M9 9h0M9 13h0M9 17h0M14 9h0M14 13h0M14 17h0"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Commercial Cleaning</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">A cleaning plan built around your office, shop, or facility, however often you need us.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">A cleaning plan built around your office, shop, or facility, however often you need us.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-community-programs" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-3a4 4 0 100-8 4 4 0 000 8zm6 0a3 3 0 100-6 3 3 0 000 6zm-12 0a3 3 0 100-6 3 3 0 000 6z"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Community Programs</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">Clean-up drives, school visits, and partnerships that help neighborhoods look after themselves.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">Clean-up drives, school visits, and partnerships that help neighborhoods look after themselves.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-post-construction-cleaning" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 18v-1a8 8 0 1116 0v1M2 18h20M9 18v-3a3 3 0 116 0v3"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Post Construction Cleaning</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">We clear out the dust and debris so your new build or renovation is ready to move into.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">We clear out the dust and debris so your new build or renovation is ready to move into.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-deep-cleaning" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19 3l.6 1.7L21.3 5l-1.7.6L19 7.3l-.6-1.7L16.7 5l1.7-.6L19 3z"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Deep Cleaning</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">A top-to-bottom clean for homes and offices that need a proper reset.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">A top-to-bottom clean for homes and offices that need a proper reset.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-move-in-out-cleaning" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9l9-5 9 5-9 5-9-5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M3 9v8l9 5 9-5V9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14v8"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Move In/Out Cleaning</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">A spotless handover, whether you're moving in or handing back the keys.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">A spotless handover, whether you're moving in or handing back the keys.</p>
       </a>
 
-      <a href="#contact" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
+      <a href="#contact" id="service-residential-cleaning" class="fade-up card-service group block bg-white border border-green-100 rounded-2xl p-7 shadow-soft">
         <div class="icon-chip w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7M5 10v9a1 1 0 001 1h3v-6h6v6h3a1 1 0 001-1v-9"/></svg>
         </div>
         <h3 class="mt-6 font-display font-semibold text-lg text-navy-900">Residential Cleaning</h3>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">Regular or one-off home cleaning, so every room stays fresh.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">Regular or one-off home cleaning, so every room stays fresh.</p>
       </a>
 
     </div>
@@ -630,32 +593,23 @@
 
 <!-- ============ VIORA PRODUCT ============ -->
 <section id="viora" class="py-24 lg:py-32 bg-gold-50/50 relative overflow-hidden">
-  <div class="absolute top-0 left-0 w-96 h-96 rounded-full -translate-y-1/3 -translate-x-1/3" style="background: radial-gradient(circle, rgba(244,180,0,0.16), transparent 70%);"></div>
-
   <div class="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
     <div class="fade-up relative">
       <div class="viora-logo-wrap rounded-3xl shadow-soft-lg overflow-hidden h-[460px] flex items-center justify-center p-14" style="background: linear-gradient(135deg, #eef2f6 0%, #fef8e9 100%);">
         <img src="brand_assets/viora-logo.png" alt="Viora dishwashing liquid" class="viora-logo-float max-h-full w-auto object-contain" />
       </div>
-      <div class="absolute -bottom-7 -right-6 bg-white rounded-2xl shadow-float px-6 py-5 flex items-center gap-4">
-        <svg class="w-9 h-9 text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.69l5.66 5.66a8 8 0 11-11.32 0z"/></svg>
-        <div>
-          <p class="font-display font-bold text-navy-900">Cuts Grease Fast</p>
-          <p class="text-xs text-ink/55 font-body">Tough on dishes, gentle on hands</p>
-        </div>
-      </div>
     </div>
 
     <div class="fade-up">
-      <span class="inline-flex items-center gap-2 bg-gold-100 text-gold-700 text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-full font-body">
+      <span class="inline-flex items-center gap-2 bg-gold-100 text-gold-800 text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-full font-body">
         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l1.5 5.5L19 9l-5.5 1.5L12 16l-1.5-5.5L5 9l5.5-1.5z"/></svg>
-        New From CleanerPlace
+        Coming Soon
       </span>
       <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl leading-tight">
-        Introducing Viora, Powerful Clean, Naturally
+        Meet Viora, Powerful Clean, Naturally
       </h2>
-      <p class="mt-6 text-ink/65 leading-relaxed-body font-body">
-        This is our first product outside of waste and cleaning services, and we built it to the same standard as everything else with our name on it. Viora cuts through grease fast, rinses clean, and won't leave your hands feeling raw.
+      <p class="mt-6 text-ink/75 leading-relaxed-body font-body">
+        Viora will be our first product outside of waste and cleaning services, and we're making it to the same standard as everything else with our name on it. It's designed to cut through grease fast, rinse clean, and not leave your hands feeling raw.
       </p>
 
       <div class="mt-10 grid sm:grid-cols-2 gap-5">
@@ -665,7 +619,7 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Fast Grease Cutting</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">A little goes a long way on pots and pans.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">A little goes a long way on pots and pans.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
@@ -673,8 +627,8 @@
             <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <div>
-            <p class="font-display font-semibold text-navy-900">Gentle On Hands</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">A mild formula safe for daily washing up.</p>
+            <p class="font-display font-semibold text-navy-900">Gentle on Hands</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">A mild formula safe for daily washing up.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
@@ -683,7 +637,7 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Eco-Conscious Formula</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">Made with ingredients that break down responsibly, not ones that linger.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">Made with ingredients that break down responsibly, not ones that linger.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
@@ -692,43 +646,43 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Three Signature Scents</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">Citrus, ocean, or fruity, pick your favorite.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">Citrus, ocean, or fruity, pick your favorite.</p>
           </div>
         </div>
       </div>
 
       <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a href="https://wa.me/2349162333300?text=Hi%2C%20I%27d%20like%20to%20order%20Viora%20dishwashing%20liquid" target="_blank" rel="noopener" class="btn-primary px-7 py-3.5 rounded-full text-base font-semibold font-body shadow-float">Order via WhatsApp</a>
-        <a href="#contact" class="btn-secondary px-7 py-3.5 rounded-full text-base font-semibold font-body">Ask a Question</a>
+        <a href="#contact" class="btn-secondary px-7 py-3.5 rounded-full text-base font-semibold font-body">Ask About Viora</a>
+        <p class="text-sm text-ink/75 font-body">Not on sale yet. We'll announce the launch date here.</p>
       </div>
     </div>
   </div>
 
   <div class="relative max-w-7xl mx-auto px-6 lg:px-8 mt-24">
     <div class="fade-up max-w-2xl mx-auto text-center">
-      <span class="block text-gold-600 font-semibold text-sm uppercase tracking-wider font-body">Coming Soon</span>
-      <h3 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-2xl sm:text-3xl">Available In Three Signature Scents</h3>
-      <p class="mt-5 text-ink/65 leading-relaxed-body font-body">Every Viora scent shares the same fast-cutting, skin-gentle formula, just pick the fragrance that fits your kitchen.</p>
+      <span class="block text-gold-800 font-semibold text-sm uppercase tracking-wider font-body">Coming Soon</span>
+      <h3 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-2xl sm:text-3xl">Three Signature Scents on the Way</h3>
+      <p class="mt-5 text-ink/75 leading-relaxed-body font-body">Every Viora scent will share the same fast-cutting, skin-gentle formula, so you'll just pick the fragrance that fits your kitchen.</p>
     </div>
 
     <div class="mt-14 grid sm:grid-cols-3 gap-6">
       <div class="fade-up card-service relative bg-white rounded-2xl p-7 shadow-soft ring-2 ring-gold-400">
-        <span class="absolute -top-3 left-7 bg-gold-500 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full font-body">Signature Scent</span>
+        <span class="absolute -top-3 left-7 bg-gold-500 text-navy-900 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full font-body">Signature Scent</span>
         <div class="w-14 h-14 rounded-xl bg-gold-100 flex items-center justify-center text-2xl">🍋</div>
         <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Lemon Mint</h4>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">Our flagship scent, a crisp citrus-mint blend that cuts grease fast and leaves the kitchen smelling spotless clean.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">Our flagship scent, a crisp citrus-mint blend that cuts grease fast and leaves the kitchen smelling spotless clean.</p>
       </div>
 
       <div class="fade-up card-service bg-white rounded-2xl p-7 shadow-soft border border-navy-100">
         <div class="w-14 h-14 rounded-xl bg-navy-50 flex items-center justify-center text-2xl">🌊</div>
         <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Ocean Breeze</h4>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">A cool, airy scent inspired by open water, light and fresh, never overpowering, for an everyday clean feel.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">A cool, airy scent inspired by open water, light and fresh, never overpowering, for an everyday clean feel.</p>
       </div>
 
       <div class="fade-up card-service bg-white rounded-2xl p-7 shadow-soft border border-[#f6d3da]">
         <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl" style="background-color: #fdecef;">🍓</div>
         <h4 class="mt-6 font-display font-semibold text-lg text-navy-900">Strawberry Fresh</h4>
-        <p class="mt-3 text-sm text-ink/60 leading-relaxed-body font-body">A cheerful, fruity twist that makes everyday dishwashing feel a little brighter, sweet scent, serious clean.</p>
+        <p class="mt-3 text-sm text-ink/75 leading-relaxed-body font-body">A cheerful, fruity twist that makes everyday dishwashing feel a little brighter, sweet scent, serious clean.</p>
       </div>
     </div>
   </div>
@@ -736,7 +690,6 @@
 
 <!-- ============ ABOUT / MISSION ============ -->
 <section id="about" class="py-24 lg:py-32 bg-green-50/60 relative overflow-hidden">
-  <div class="absolute top-0 right-0 w-96 h-96 rounded-full -translate-y-1/3 translate-x-1/3" style="background: radial-gradient(circle, rgba(31,116,99,0.10), transparent 70%);"></div>
 
   <div class="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
     <div class="fade-up relative order-2 lg:order-1">
@@ -748,8 +701,8 @@
       <div class="absolute -bottom-7 right-6 bg-white rounded-2xl shadow-float px-6 py-5 flex items-center gap-4">
         <svg class="w-9 h-9 text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.97-4.2-8-7.5-8-11a5 5 0 0110 0 5 5 0 0110 0c0 3.5-3.03 6.8-8 11z"/></svg>
         <div>
-          <p class="font-display font-bold text-navy-900">Since 2025</p>
-          <p class="text-xs text-ink/55 font-body">Locally rooted, community driven</p>
+          <p class="font-display font-bold text-navy-900">Launching January 2027</p>
+          <p class="text-xs text-ink/70 font-body">Starting in Yola, Adamawa State</p>
         </div>
       </div>
     </div>
@@ -757,10 +710,10 @@
     <div class="fade-up order-1 lg:order-2">
       <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">Our Mission</span>
       <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl leading-tight">
-        Cleaner Streets Today, A Better City Tomorrow
+        Cleaner Streets Today, a Better City Tomorrow
       </h2>
-      <p class="mt-6 text-ink/65 leading-relaxed-body font-body">
-        We started CleanerPlace because Abuja deserved better waste management, and because clean streets and clean air make for healthier people. That's still what drives every pickup and every sorted bag of recyclables, one street at a time.
+      <p class="mt-6 text-ink/75 leading-relaxed-body font-body">
+        We started CleanerPlace because our communities deserve better waste management, and because clean streets and clean air make for healthier people. That's what will drive every pickup and every sorted bag of recyclables when we launch in Yola, one street at a time.
       </p>
 
       <div class="mt-10 grid sm:grid-cols-2 gap-5">
@@ -770,7 +723,7 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Integrity</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">Honest service, every time.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">Honest service, every time.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
@@ -779,7 +732,7 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Innovation</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">Always looking for a better way to handle waste.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">Always looking for a better way to handle waste.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
@@ -788,7 +741,7 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Sustainability</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">Protecting what comes next.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">Protecting what comes next.</p>
           </div>
         </div>
         <div class="flex items-start gap-3.5">
@@ -797,7 +750,7 @@
           </div>
           <div>
             <p class="font-display font-semibold text-navy-900">Teamwork</p>
-            <p class="text-sm text-ink/60 mt-1 font-body">Stronger together, always.</p>
+            <p class="text-sm text-ink/75 mt-1 font-body">Stronger together, always.</p>
           </div>
         </div>
       </div>
@@ -810,7 +763,7 @@
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="fade-up max-w-2xl mx-auto text-center">
       <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">How It Works</span>
-      <h2 class="underline-grow inline-block mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">Simple, Reliable, Sustainable</h2>
+      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">Simple, Reliable, Sustainable</h2>
     </div>
 
     <div class="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 relative">
@@ -819,210 +772,54 @@
       <div class="fade-up relative text-center">
         <div class="relative inline-flex w-14 h-14 rounded-full bg-navy-900 text-white items-center justify-center font-display font-bold text-lg shadow-float">01</div>
         <h3 class="mt-6 font-display font-semibold text-navy-900">Schedule</h3>
-        <p class="mt-2 text-sm text-ink/60 leading-relaxed-body font-body px-2">Tell us what you need and when, it takes two minutes online.</p>
+        <p class="mt-2 text-sm text-ink/75 leading-relaxed-body font-body px-2">Tell us what you need and when, it takes two minutes online.</p>
       </div>
       <div class="fade-up relative text-center">
         <div class="relative inline-flex w-14 h-14 rounded-full bg-navy-900 text-white items-center justify-center font-display font-bold text-lg shadow-float">02</div>
         <h3 class="mt-6 font-display font-semibold text-navy-900">Collect</h3>
-        <p class="mt-2 text-sm text-ink/60 leading-relaxed-body font-body px-2">Our crew shows up on time and gets it done.</p>
+        <p class="mt-2 text-sm text-ink/75 leading-relaxed-body font-body px-2">Our crew shows up on time and gets it done.</p>
       </div>
       <div class="fade-up relative text-center">
         <div class="relative inline-flex w-14 h-14 rounded-full bg-navy-900 text-white items-center justify-center font-display font-bold text-lg shadow-float">03</div>
         <h3 class="mt-6 font-display font-semibold text-navy-900">Sort &amp; Recycle</h3>
-        <p class="mt-2 text-sm text-ink/60 leading-relaxed-body font-body px-2">We sort and process everything recyclable at our own facility.</p>
+        <p class="mt-2 text-sm text-ink/75 leading-relaxed-body font-body px-2">We sort and process everything recyclable at our own facility.</p>
       </div>
       <div class="fade-up relative text-center">
         <div class="relative inline-flex w-14 h-14 rounded-full bg-navy-900 text-white items-center justify-center font-display font-bold text-lg shadow-float">04</div>
         <h3 class="mt-6 font-display font-semibold text-navy-900">Report Back</h3>
-        <p class="mt-2 text-sm text-ink/60 leading-relaxed-body font-body px-2">We'll show you exactly what got collected and recycled, no jargon.</p>
+        <p class="mt-2 text-sm text-ink/75 leading-relaxed-body font-body px-2">We'll show you exactly what got collected and recycled, no jargon.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ IMPACT STATS ============ -->
-<section id="impact" class="relative py-24 lg:py-28 bg-navy-900 overflow-hidden">
-  <div class="absolute -top-20 left-1/4 w-[400px] h-[400px] rounded-full" style="background: radial-gradient(circle, rgba(31,116,99,0.4), transparent 70%);"></div>
-  <div class="absolute bottom-0 right-0 w-[360px] h-[360px] rounded-full translate-x-1/3 translate-y-1/3" style="background: radial-gradient(circle, rgba(244,180,0,0.15), transparent 70%);"></div>
-
-  <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="fade-up max-w-xl mx-auto text-center">
-      <span class="block text-gold-400 font-semibold text-sm uppercase tracking-wider font-body">Our Impact</span>
-      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-white text-3xl sm:text-4xl">The Difference, So Far</h2>
-    </div>
-
-    <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="fade-up stat-card bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
-        <p class="font-display font-bold text-4xl text-white"><span class="counter" data-target="400">0</span><span class="text-green-300">+</span></p>
-        <p class="mt-2 text-sm text-white/55 font-body">Tons Recycled Annually</p>
-      </div>
-      <div class="fade-up stat-card bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
-        <p class="font-display font-bold text-4xl text-white"><span class="counter" data-target="8">0</span></p>
-        <p class="mt-2 text-sm text-white/55 font-body">Communities Served</p>
-      </div>
-      <div class="fade-up stat-card bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
-        <p class="font-display font-bold text-4xl text-white"><span class="counter" data-target="500">0</span><span class="text-green-300">+</span></p>
-        <p class="mt-2 text-sm text-white/55 font-body">Houses Served</p>
-      </div>
-      <div class="fade-up stat-card bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm">
-        <p class="font-display font-bold text-4xl text-white"><span class="counter" data-target="98">0</span><span class="text-green-300">%</span></p>
-        <p class="mt-2 text-sm text-white/55 font-body">Client Satisfaction</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ CEO MESSAGE ============ -->
 <section class="py-24 lg:py-32 bg-white relative overflow-hidden">
-  <div class="absolute top-0 left-0 w-80 h-80 rounded-full -translate-y-1/3 -translate-x-1/3" style="background: radial-gradient(circle, rgba(244,180,0,0.08), transparent 70%);"></div>
 
   <div class="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
     <div class="fade-up relative">
       <div class="img-treat rounded-3xl shadow-soft-lg h-[420px]">
         <img src="brand_assets/ceo pic.jpeg" alt="Ibrahim Mohammed Nasidi, Founder & Chief Executive Officer" class="w-full h-full object-cover" />
       </div>
-      <div class="absolute -bottom-7 -right-6 bg-white rounded-2xl shadow-float px-6 py-5">
-        <p class="font-display font-bold text-navy-900">Ibrahim Mohammed Nasidi</p>
-        <p class="text-xs text-ink/55 font-body">Founder &amp; Chief Executive Officer</p>
-      </div>
     </div>
 
     <div class="fade-up">
-      <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">A Message From Our CEO</span>
-      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl leading-tight">Building A Cleaner Abuja, One Community At A Time</h2>
+      <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">A Message from Our CEO</span>
+      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl leading-tight">Building a Cleaner Yola, One Community at a Time</h2>
 
       <svg class="w-10 h-10 text-green-200 mt-7" viewBox="0 0 24 24" fill="currentColor"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h10zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-4v-10h10z"/></svg>
 
       <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-lg">
-        When we started CleanerPlace, the goal was simple: make our streets, estates, and offices cleaner, and in doing so, make our communities healthier. From Maitama to Jahi, Katampe to Guzape, every truck we send out and every home we clean carries that same promise.
+        When we started CleanerPlace, the goal was simple: make our streets, estates, and offices cleaner, and in doing so, make our communities healthier. When we launch in Yola this January, every truck we send out and every home we clean will carry that same promise, and Abuja is next.
       </p>
       <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-lg">
-        We're proud of what we've built so far, but we're just getting started. Thank you for trusting CleanerPlace with your home, your business, and your community.
+        We're just getting started. Thank you for considering CleanerPlace for your home, your business, and your community.
       </p>
 
       <div class="mt-8">
         <p class="font-display font-bold text-xl text-navy-900">Ibrahim Mohammed Nasidi</p>
-        <p class="text-sm text-ink/55 font-body mt-1">Founder &amp; Chief Executive Officer, CleanerPlace Limited</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TESTIMONIALS ============ -->
-<section class="py-24 lg:py-32 bg-white">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="fade-up max-w-2xl mx-auto text-center">
-      <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">Testimonials</span>
-      <h2 class="underline-grow inline-block mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">What Our Residents Say</h2>
-    </div>
-
-    <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="fade-up bg-green-50/70 border border-green-100 rounded-2xl p-8 shadow-soft">
-        <div class="flex gap-1 text-gold-500">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-        </div>
-        <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-sm">"CleanerPlace always comes on time and our street has never been this clean. The team is respectful and thorough every single week."</p>
-        <div class="mt-6 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1643956740911-62c19a5405f0?w=96&h=96&fit=crop&crop=faces&q=80&auto=format" alt="Hauwa Ibrahim" class="w-11 h-11 rounded-full object-cover" />
-          <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Hauwa Ibrahim</p>
-            <p class="text-xs text-ink/50 font-body">Resident, Maitama</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up bg-green-50/70 border border-green-100 rounded-2xl p-8 shadow-soft">
-        <div class="flex gap-1 text-gold-500">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-        </div>
-        <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-sm">"Since CleanerPlace started collecting in our estate, the waste problem we used to have is completely gone. Very reliable people."</p>
-        <div class="mt-6 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=96&h=96&fit=crop&crop=faces&q=80&auto=format" alt="Chukwuemeka Obi" class="w-11 h-11 rounded-full object-cover" />
-          <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Chukwuemeka Obi</p>
-            <p class="text-xs text-ink/50 font-body">Resident, Jahi</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up bg-green-50/70 border border-green-100 rounded-2xl p-8 shadow-soft">
-        <div class="flex gap-1 text-gold-500">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-        </div>
-        <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-sm">"I love that they actually separate recyclables instead of dumping everything together. Good to see a company that truly cares."</p>
-        <div class="mt-6 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1764265150663-e58dcfc03252?w=96&h=96&fit=crop&crop=faces&q=80&auto=format" alt="Funmilayo Adebayo" class="w-11 h-11 rounded-full object-cover" />
-          <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Funmilayo Adebayo</p>
-            <p class="text-xs text-ink/50 font-body">Resident, Guzape</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up bg-green-50/70 border border-green-100 rounded-2xl p-8 shadow-soft">
-        <div class="flex gap-1 text-gold-500">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-        </div>
-        <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-sm">"Before CleanerPlace, we struggled to get anyone to collect waste regularly around here. Now it's like clockwork every single week."</p>
-        <div class="mt-6 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1659422440915-d516c6dc932e?w=96&h=96&fit=crop&crop=faces&q=80&auto=format" alt="Abdullahi Garba" class="w-11 h-11 rounded-full object-cover" />
-          <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Abdullahi Garba</p>
-            <p class="text-xs text-ink/50 font-body">Resident, Katampe</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up bg-green-50/70 border border-green-100 rounded-2xl p-8 shadow-soft">
-        <div class="flex gap-1 text-gold-500">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-        </div>
-        <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-sm">"The crew is always polite and they never leave a mess behind after collection. Exactly the kind of service we needed."</p>
-        <div class="mt-6 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1756588534346-e8899364757b?w=96&h=96&fit=crop&crop=faces&q=80&auto=format" alt="Ngozi Eze" class="w-11 h-11 rounded-full object-cover" />
-          <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Ngozi Eze</p>
-            <p class="text-xs text-ink/50 font-body">Resident, Wuse</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up bg-green-50/70 border border-green-100 rounded-2xl p-8 shadow-soft">
-        <div class="flex gap-1 text-gold-500">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.9 6 6.6.9-4.8 4.6 1.1 6.5L10 16l-5.8 3 1.1-6.5L.5 7.9l6.6-.9z"/></svg>
-        </div>
-        <p class="mt-5 text-ink/70 leading-relaxed-body font-body text-sm">"Our estate switched to CleanerPlace last year and the difference has been huge, no more overflowing bins on the street."</p>
-        <div class="mt-6 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1614023342667-6f060e9d1e04?w=96&h=96&fit=crop&crop=faces&q=80&auto=format" alt="Oluwaseun Bakare" class="w-11 h-11 rounded-full object-cover" />
-          <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Oluwaseun Bakare</p>
-            <p class="text-xs text-ink/50 font-body">Resident, Asokoro</p>
-          </div>
-        </div>
+        <p class="text-sm text-ink/70 font-body mt-1">Founder &amp; Chief Executive Officer, CleanerPlace Limited</p>
       </div>
     </div>
   </div>
@@ -1033,7 +830,7 @@
   <div class="max-w-3xl mx-auto px-6 lg:px-8">
     <div class="fade-up text-center">
       <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">FAQ</span>
-      <h2 class="underline-grow inline-block mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">Common Questions</h2>
+      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl">Common Questions</h2>
     </div>
 
     <div class="mt-14 space-y-4">
@@ -1042,7 +839,7 @@
           What areas does CleanerPlace service?
           <svg class="faq-icon w-5 h-5 text-green-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
         </summary>
-        <p class="pb-4 text-sm text-ink/65 leading-relaxed-body font-body">We cover Maitama, Jahi, Katampe, Guzape, and Wuse right now, homes, businesses, and municipal contracts alike. Not sure if we reach your address? Just ask us.</p>
+        <p class="pb-4 text-sm text-ink/75 leading-relaxed-body font-body">We're launching in Yola, Adamawa State in January 2027, for homes, businesses, and municipal contracts alike. Abuja is coming soon. Not sure if we'll reach your address? Just ask us.</p>
       </details>
 
       <details class="fade-up group bg-white rounded-2xl shadow-soft border border-green-100 px-6 py-2">
@@ -1050,7 +847,7 @@
           How is recyclable material processed?
           <svg class="faq-icon w-5 h-5 text-green-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
         </summary>
-        <p class="pb-4 text-sm text-ink/65 leading-relaxed-body font-body">Everything recyclable gets sorted and processed at our own facility, and we send commercial and municipal partners a full report of where it went.</p>
+        <p class="pb-4 text-sm text-ink/75 leading-relaxed-body font-body">Everything recyclable gets sorted and processed at our own facility, and we send commercial and municipal partners a full report of where it went.</p>
       </details>
 
       <details class="fade-up group bg-white rounded-2xl shadow-soft border border-green-100 px-6 py-2">
@@ -1058,7 +855,7 @@
           Can I get a custom service plan for my business?
           <svg class="faq-icon w-5 h-5 text-green-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
         </summary>
-        <p class="pb-4 text-sm text-ink/65 leading-relaxed-body font-body">Yes. Tell us how often you need pickups and what size bins fit your space, and we'll build a plan around it. Request a free quote to get started.</p>
+        <p class="pb-4 text-sm text-ink/75 leading-relaxed-body font-body">Yes. Tell us how often you need pickups and what size bins fit your space, and we'll build a plan around it. Request a free quote to get started.</p>
       </details>
 
       <details class="fade-up group bg-white rounded-2xl shadow-soft border border-green-100 px-6 py-2">
@@ -1066,7 +863,7 @@
           Do you offer community clean-up events?
           <svg class="faq-icon w-5 h-5 text-green-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
         </summary>
-        <p class="pb-4 text-sm text-ink/65 leading-relaxed-body font-body">We do. We team up with schools, resident groups, and local government on clean-up drives and recycling education throughout the year.</p>
+        <p class="pb-4 text-sm text-ink/75 leading-relaxed-body font-body">Yes. Once we launch, we'll team up with schools, resident groups, and local government on clean-up drives and recycling education throughout the year.</p>
       </details>
     </div>
   </div>
@@ -1074,16 +871,12 @@
 
 <!-- ============ CTA BANNER ============ -->
 <section class="relative py-20 bg-green-600 overflow-hidden">
-  <div class="absolute inset-0">
-    <div class="absolute -left-20 -top-20 w-72 h-72 rounded-full" style="background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);"></div>
-    <div class="absolute right-0 bottom-0 w-80 h-80 rounded-full translate-x-1/4 translate-y-1/4" style="background: radial-gradient(circle, rgba(30,58,95,0.35), transparent 70%);"></div>
-  </div>
   <div class="fade-up relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-    <h2 class="font-display font-bold tracking-tight-xl text-white text-3xl sm:text-4xl">Let's Keep Abuja Clean, Together</h2>
-    <p class="mt-4 text-white/80 font-body max-w-xl mx-auto">Join the neighborhoods and businesses already working with us for cleaner streets and better waste habits.</p>
+    <h2 class="font-display font-bold tracking-tight-xl text-white text-3xl sm:text-4xl">Let's Keep Yola Clean, Together</h2>
+    <p class="mt-4 text-white/80 font-body max-w-xl mx-auto">We start in January 2027. Get your quote in early and be one of the first homes and businesses on our routes.</p>
     <div class="mt-9 flex flex-wrap justify-center gap-4">
       <a href="#contact" class="bg-white text-green-700 px-7 py-3.5 rounded-full text-base font-semibold font-body shadow-float hover:bg-green-50 transition-colors hover:-translate-y-0.5 active:scale-95">Get a Free Quote</a>
-      <a href="#contact" class="px-7 py-3.5 rounded-full text-base font-semibold font-body text-white border border-white/30 hover:bg-white/10 transition-colors">Join Today</a>
+      <a href="https://wa.me/2349162333300" target="_blank" rel="noopener" class="px-7 py-3.5 rounded-full text-base font-semibold font-body text-white border border-white/30 hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">Message Us on WhatsApp</a>
     </div>
   </div>
 </section>
@@ -1092,9 +885,9 @@
 <section id="contact" class="py-24 lg:py-32 bg-white">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-5 gap-12">
     <div class="fade-up lg:col-span-2">
-      <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">Get In Touch</span>
-      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl leading-tight">Let's Build A Cleaner Place For You</h2>
-      <p class="mt-6 text-ink/65 leading-relaxed-body font-body">Tell us a bit about your home, business, or estate, and we'll get back to you with a free quote within one business day.</p>
+      <span class="block text-green-600 font-semibold text-sm uppercase tracking-wider font-body">Get in Touch</span>
+      <h2 class="mt-4 font-display font-bold tracking-tight-xl text-navy-900 text-3xl sm:text-4xl leading-tight">Let's Build a Cleaner Place for You</h2>
+      <p class="mt-6 text-ink/75 leading-relaxed-body font-body">Tell us a bit about your home, business, or estate, and we'll get back to you with a free quote within one business day.</p>
 
       <div class="mt-10 space-y-5">
         <div class="relative">
@@ -1104,11 +897,11 @@
             </div>
             <div>
               <p class="font-display font-semibold text-sm text-navy-900">Call Us</p>
-              <p class="text-sm text-ink/60 font-body">+234 916 233 3300</p>
+              <p class="text-sm text-ink/75 font-body">+234 916 233 3300</p>
             </div>
           </button>
 
-          <div id="callUsMenu" class="mobile-menu overflow-hidden max-h-0 opacity-0 absolute left-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-float border border-green-100 z-20">
+          <div id="callUsMenu" inert class="mobile-menu overflow-hidden max-h-0 opacity-0 absolute left-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-float border border-green-100 z-20">
             <a href="tel:+2349162333300" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-navy-900 hover:bg-green-50 transition-colors rounded-t-2xl">
               <svg class="w-4 h-4 text-green-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-1.873.937a11.042 11.042 0 005.516 5.516l.937-1.873a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 17.72V20a2 2 0 01-2 2h-1C9.163 22 2 14.837 2 6V5z"/></svg>
               Call
@@ -1126,11 +919,11 @@
             </div>
             <div>
               <p class="font-display font-semibold text-sm text-navy-900">Email Us</p>
-              <p class="text-sm text-ink/60 font-body">info@cleanerplaceltd.com</p>
+              <p class="text-sm text-ink/75 font-body">info@cleanerplaceltd.com</p>
             </div>
           </button>
 
-          <div id="emailUsMenu" class="mobile-menu overflow-hidden max-h-0 opacity-0 absolute left-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-float border border-green-100 z-20">
+          <div id="emailUsMenu" inert class="mobile-menu overflow-hidden max-h-0 opacity-0 absolute left-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-float border border-green-100 z-20">
             <a href="mailto:info@cleanerplaceltd.com" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-navy-900 hover:bg-green-50 transition-colors rounded-t-2xl">
               <svg class="w-4 h-4 text-green-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               Send Email
@@ -1146,8 +939,18 @@
             <svg class="w-5 h-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <div>
-            <p class="font-display font-semibold text-sm text-navy-900">Visit Us</p>
-            <p class="text-sm text-ink/60 font-body">Suite 111, Fabdal Plaza, off Constantine Street, Wuse Zone 4, Abuja, Nigeria</p>
+            <p class="font-display font-semibold text-sm text-navy-900">Service Areas</p>
+            <p class="text-sm text-ink/75 font-body">Yola, Adamawa State: launching January 2027</p>
+            <p class="text-sm text-ink/75 font-body">Abuja: coming soon</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-xl bg-green-50 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-display font-semibold text-sm text-navy-900">Business Hours</p>
+            <p class="text-sm text-ink/75 font-body">Monday to Sunday, 7:00am to 7:00pm</p>
           </div>
         </div>
       </div>
@@ -1157,23 +960,23 @@
       <input type="hidden" name="_subject" value="New Quote Request - CleanerPlace Website" />
       <input type="hidden" name="_template" value="table" />
 
-      <div id="formStatus" class="hidden mb-6 px-4 py-3 rounded-xl text-sm font-semibold font-body"></div>
+      <div id="formStatus" role="status" aria-live="polite" class="hidden mb-6 px-4 py-3 rounded-xl text-sm font-semibold font-body"></div>
       <div class="grid sm:grid-cols-2 gap-5">
         <div>
-          <label class="block text-sm font-semibold text-navy-900 mb-2 font-body">Full Name</label>
-          <input type="text" name="full_name" required placeholder="Enter your full name" class="w-full rounded-xl border border-green-200 bg-white px-4 py-3 text-sm font-body transition-colors" />
+          <label for="full_name" class="block text-sm font-semibold text-navy-900 mb-2 font-body">Full Name <span class="text-red-700" aria-hidden="true">*</span></label>
+          <input type="text" id="full_name" autocomplete="name" name="full_name" required placeholder="Enter your full name" class="w-full rounded-xl border border-green-400 bg-white px-4 py-3 text-sm font-body transition-colors" />
         </div>
         <div>
-          <label class="block text-sm font-semibold text-navy-900 mb-2 font-body">Phone Number</label>
-          <input type="tel" name="phone_number" required placeholder="+234 801 234 5678" class="w-full rounded-xl border border-green-200 bg-white px-4 py-3 text-sm font-body transition-colors" />
+          <label for="phone_number" class="block text-sm font-semibold text-navy-900 mb-2 font-body">Phone Number <span class="text-red-700" aria-hidden="true">*</span></label>
+          <input type="tel" id="phone_number" autocomplete="tel" name="phone_number" required placeholder="+234 801 234 5678" class="w-full rounded-xl border border-green-400 bg-white px-4 py-3 text-sm font-body transition-colors" />
         </div>
         <div class="sm:col-span-2">
-          <label class="block text-sm font-semibold text-navy-900 mb-2 font-body">Email Address</label>
-          <input type="email" name="email_address" required placeholder="you@email.com" class="w-full rounded-xl border border-green-200 bg-white px-4 py-3 text-sm font-body transition-colors" />
+          <label for="email_address" class="block text-sm font-semibold text-navy-900 mb-2 font-body">Email Address <span class="text-red-700" aria-hidden="true">*</span></label>
+          <input type="email" id="email_address" autocomplete="email" name="email_address" required placeholder="you@email.com" class="w-full rounded-xl border border-green-400 bg-white px-4 py-3 text-sm font-body transition-colors" />
         </div>
         <div class="sm:col-span-2">
-          <label class="block text-sm font-semibold text-navy-900 mb-2 font-body">Service Needed</label>
-          <select name="service_needed" class="w-full rounded-xl border border-green-200 bg-white px-4 py-3 text-sm font-body transition-colors">
+          <label for="service_needed" class="block text-sm font-semibold text-navy-900 mb-2 font-body">Service Needed</label>
+          <select id="service_needed" name="service_needed" class="w-full rounded-xl border border-green-400 bg-white px-4 py-3 text-sm font-body transition-colors">
             <option>Residential Waste Collection</option>
             <option>Commercial Waste Collection</option>
             <option>Recycling Program</option>
@@ -1186,11 +989,12 @@
           </select>
         </div>
         <div class="sm:col-span-2">
-          <label class="block text-sm font-semibold text-navy-900 mb-2 font-body">Message</label>
-          <textarea rows="4" name="message" placeholder="Tell us a bit about what you need..." class="w-full rounded-xl border border-green-200 bg-white px-4 py-3 text-sm font-body transition-colors resize-none"></textarea>
+          <label for="message" class="block text-sm font-semibold text-navy-900 mb-2 font-body">Message</label>
+          <textarea rows="4" id="message" name="message" placeholder="Tell us a bit about what you need..." class="w-full rounded-xl border border-green-400 bg-white px-4 py-3 text-sm font-body transition-colors resize-none"></textarea>
         </div>
       </div>
-      <button type="submit" id="contactSubmitBtn" class="btn-primary mt-7 w-full sm:w-auto px-8 py-3.5 rounded-full text-base font-semibold font-body">Request My Free Quote</button>
+      <p class="mt-5 text-xs text-ink/70 font-body"><span class="text-red-700" aria-hidden="true">*</span> Required. We only use your details to reply to you. See our <a href="privacy.html" class="underline text-green-700 hover:text-green-800">Privacy Policy</a>.</p>
+      <button type="submit" id="contactSubmitBtn" class="btn-primary mt-4 w-full sm:w-auto px-8 py-3.5 rounded-full text-base font-semibold font-body">Request My Free Quote</button>
     </form>
   </div>
 </section>
@@ -1205,7 +1009,7 @@
             <img src="brand_assets/cleanerplace-logo.png" alt="CleanerPlace Limited" class="h-16 w-auto object-contain" />
           </div>
         </div>
-        <p class="mt-6 text-white/55 text-sm leading-relaxed-body font-body max-w-sm">We handle waste collection, recycling, and cleaning across Abuja, because a cleaner place makes for a healthier community.</p>
+        <p class="mt-6 text-white/55 text-sm leading-relaxed-body font-body max-w-sm">We handle waste collection, recycling, and cleaning, starting in Yola, Adamawa State in January 2027 with Abuja coming soon, because a cleaner place makes for a healthier community.</p>
         <p class="mt-6 text-white/90 text-sm font-semibold font-body">Check out our socials</p>
         <div class="mt-3 flex items-center gap-3">
           <a href="https://www.facebook.com/share/1E7SGkbfkg/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400">
@@ -1222,35 +1026,37 @@
 
       <div>
         <p class="font-display font-semibold text-sm uppercase tracking-wider text-white/90">Company</p>
-        <ul class="mt-5 space-y-3 text-sm text-white/55 font-body">
-          <li><a href="#about" class="hover:text-green-300 transition-colors">About Us</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Services</a></li>
-          <li><a href="#viora" class="hover:text-green-300 transition-colors">Viora</a></li>
-          <li><a href="#impact" class="hover:text-green-300 transition-colors">Our Impact</a></li>
-          <li><a href="#faq" class="hover:text-green-300 transition-colors">FAQ</a></li>
+        <ul class="mt-4 space-y-1 text-sm text-white/55 font-body">
+          <li><a href="#about" class="inline-block py-1.5 hover:text-green-300 transition-colors">About Us</a></li>
+          <li><a href="#services" class="inline-block py-1.5 hover:text-green-300 transition-colors">Services</a></li>
+          <li><a href="#viora" class="inline-block py-1.5 hover:text-green-300 transition-colors">Viora</a></li>
+          <li><a href="#faq" class="inline-block py-1.5 hover:text-green-300 transition-colors">FAQ</a></li>
+          <li><a href="#contact" class="inline-block py-1.5 hover:text-green-300 transition-colors">Contact</a></li>
+          <li><a href="privacy.html" class="inline-block py-1.5 hover:text-green-300 transition-colors">Privacy Policy</a></li>
+          <li><a href="terms.html" class="inline-block py-1.5 hover:text-green-300 transition-colors">Terms of Service</a></li>
         </ul>
       </div>
 
       <div>
         <p class="font-display font-semibold text-sm uppercase tracking-wider text-white/90">Services</p>
-        <ul class="mt-5 space-y-3 text-sm text-white/55 font-body">
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Waste Collection</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Recycling Programs</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Commercial Cleaning</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Residential Cleaning</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Deep Cleaning</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Post Construction Cleaning</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Move In/Out Cleaning</a></li>
-          <li><a href="#services" class="hover:text-green-300 transition-colors">Community Programs</a></li>
+        <ul class="mt-4 space-y-1 text-sm text-white/55 font-body">
+          <li><a href="#service-waste-collection" class="inline-block py-1.5 hover:text-green-300 transition-colors">Waste Collection</a></li>
+          <li><a href="#service-recycling-programs" class="inline-block py-1.5 hover:text-green-300 transition-colors">Recycling Programs</a></li>
+          <li><a href="#service-commercial-cleaning" class="inline-block py-1.5 hover:text-green-300 transition-colors">Commercial Cleaning</a></li>
+          <li><a href="#service-residential-cleaning" class="inline-block py-1.5 hover:text-green-300 transition-colors">Residential Cleaning</a></li>
+          <li><a href="#service-deep-cleaning" class="inline-block py-1.5 hover:text-green-300 transition-colors">Deep Cleaning</a></li>
+          <li><a href="#service-post-construction-cleaning" class="inline-block py-1.5 hover:text-green-300 transition-colors">Post Construction Cleaning</a></li>
+          <li><a href="#service-move-in-out-cleaning" class="inline-block py-1.5 hover:text-green-300 transition-colors">Move In/Out Cleaning</a></li>
+          <li><a href="#service-community-programs" class="inline-block py-1.5 hover:text-green-300 transition-colors">Community Programs</a></li>
         </ul>
       </div>
     </div>
 
     <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-xs text-white/40 font-body">© 2026 CleanerPlace Limited. RC 9178827. Abuja, Nigeria. All rights reserved.</p>
-      <p class="text-xs text-white/40 font-body italic">A Cleaner Place, A Healthier Community</p>
+      <p class="text-xs text-white/60 font-body">© 2026 CleanerPlace Limited. RC 9178827. Yola, Adamawa State, Nigeria. All rights reserved.</p>
+      <p class="text-xs text-white/60 font-body italic">A Cleaner Place, A Healthier Community</p>
     </div>
-    <p class="mt-4 text-center text-xs text-white/30 font-body">Secured by NSD Integrated Security Solutions LLC</p>
+    <p class="mt-4 text-center text-xs text-white/60 font-body">Built by NSD Digital Agency</p>
   </div>
 </footer>
 
@@ -1270,21 +1076,17 @@
   const iconOpen = document.getElementById('iconOpen');
   const iconClose = document.getElementById('iconClose');
   let open = false;
-  menuBtn.addEventListener('click', () => {
-    open = !open;
+  // Closed menus are marked inert so keyboard users can't tab into links they can't see.
+  function setMobileMenu(state) {
+    open = state;
     menuBtn.setAttribute('aria-expanded', String(open));
-    if (open) {
-      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
-      mobileMenu.style.opacity = '1';
-      iconOpen.classList.add('hidden');
-      iconClose.classList.remove('hidden');
-    } else {
-      mobileMenu.style.maxHeight = '0px';
-      mobileMenu.style.opacity = '0';
-      iconOpen.classList.remove('hidden');
-      iconClose.classList.add('hidden');
-    }
-  });
+    mobileMenu.inert = !open;
+    mobileMenu.style.maxHeight = open ? mobileMenu.scrollHeight + 'px' : '0px';
+    mobileMenu.style.opacity = open ? '1' : '0';
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+  }
+  menuBtn.addEventListener('click', () => setMobileMenu(!open));
 
   const dropdownClosers = [];
 
@@ -1295,6 +1097,7 @@
     function setState(state) {
       isOpen = state;
       btn.setAttribute('aria-expanded', String(state));
+      menu.inert = !state;
       menu.style.maxHeight = state ? menu.scrollHeight + 'px' : '0px';
       menu.style.opacity = state ? '1' : '0';
     }
@@ -1310,7 +1113,20 @@
       }
     });
     dropdownClosers.push(() => setState(false));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isOpen) {
+        setState(false);
+        btn.focus();
+      }
+    });
   }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && open) {
+      setMobileMenu(false);
+      menuBtn.focus();
+    }
+  });
 
   setupDropdown('callUsBtn', 'callUsMenu');
   setupDropdown('emailUsBtn', 'emailUsMenu');
@@ -1373,166 +1189,6 @@
     }
   });
 
-  function animateCounter(el) {
-    const target = parseInt(el.dataset.target, 10);
-    const duration = 1600;
-    const start = performance.now();
-    function step(now) {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.floor(eased * target).toLocaleString('en-US');
-      if (progress < 1) requestAnimationFrame(step);
-      else el.textContent = target.toLocaleString('en-US');
-    }
-    requestAnimationFrame(step);
-  }
-
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        counterObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.4 });
-
-  document.querySelectorAll('.counter').forEach((el) => counterObserver.observe(el));
-
-  function initFluidBox(container, options = {}) {
-    if (!container) return;
-    const {
-      particleDensity = 500,
-      particleSize = 1.3,
-      particleColor = 'rgba(255,255,255,0.3)',
-      activeColor = '#F4B400',
-      maxBlastRadius = 150,
-      hoverDelay = 150,
-      interactionDistance = 80
-    } = options;
-
-    const canvas = document.createElement('canvas');
-    canvas.style.position = 'absolute';
-    canvas.style.inset = '0';
-    canvas.style.width = '100%';
-    canvas.style.height = '100%';
-    container.insertBefore(canvas, container.firstChild);
-
-    const ctx = canvas.getContext('2d', { alpha: true });
-    let particles = [];
-    let width = 0, height = 0;
-    const mouse = { x: -9999, y: -9999 };
-    const blast = { active: false, x: 0, y: 0, radius: 0 };
-    let hoverTimer = null;
-
-    class Particle {
-      constructor(x, y) {
-        this.baseX = x; this.baseY = y;
-        this.x = x; this.y = y;
-        this.size = Math.random() * particleSize + 0.6;
-        this.density = Math.random() * 3 + 1;
-        this.vx = 0; this.vy = 0;
-        this.friction = 0.9 - 0.01 * this.density;
-        this.color = particleColor;
-      }
-      draw() {
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-      }
-      update() {
-        this.x += this.vx; this.y += this.vy;
-        this.vx *= this.friction; this.vy *= this.friction;
-
-        const dx = mouse.x - this.x, dy = mouse.y - this.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < interactionDistance) {
-          const fx = dx / dist, fy = dy / dist;
-          const force = (interactionDistance - dist) / interactionDistance;
-          this.x -= fx * force * this.density * 1.2;
-          this.y -= fy * force * this.density * 1.2;
-          this.color = activeColor;
-        } else {
-          this.x -= (this.x - this.baseX) / 20;
-          this.y -= (this.y - this.baseY) / 20;
-          this.color = particleColor;
-        }
-
-        if (blast.active) {
-          const bdx = this.x - blast.x, bdy = this.y - blast.y;
-          const bdist = Math.sqrt(bdx * bdx + bdy * bdy) || 1;
-          if (bdist < blast.radius) {
-            const bf = (blast.radius - bdist) / blast.radius;
-            this.vx += (bdx / bdist) * bf * 6;
-            this.vy += (bdy / bdist) * bf * 6;
-            this.color = activeColor;
-          }
-        }
-        this.draw();
-      }
-    }
-
-    function initParticles() {
-      particles = [];
-      const count = Math.floor((width * height) / particleDensity);
-      for (let i = 0; i < count; i++) {
-        particles.push(new Particle(Math.random() * width, Math.random() * height));
-      }
-    }
-
-    function resize() {
-      const rect = container.getBoundingClientRect();
-      const dpr = window.devicePixelRatio || 1;
-      width = rect.width;
-      height = rect.height;
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      initParticles();
-    }
-
-    function triggerBlast(x, y) {
-      blast.active = true; blast.x = x; blast.y = y; blast.radius = 0;
-      const start = performance.now();
-      const duration = 350;
-      function expand(ts) {
-        const p = Math.min((ts - start) / duration, 1);
-        blast.radius = (p * (2 - p)) * maxBlastRadius;
-        if (p < 1) requestAnimationFrame(expand);
-        else setTimeout(() => { blast.active = false; }, 100);
-      }
-      requestAnimationFrame(expand);
-    }
-
-    container.style.position = container.style.position || 'relative';
-    container.addEventListener('mousemove', (e) => {
-      const rect = container.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-      if (hoverTimer) clearTimeout(hoverTimer);
-      hoverTimer = setTimeout(() => triggerBlast(mouse.x, mouse.y), hoverDelay);
-    });
-    container.addEventListener('mouseleave', () => {
-      mouse.x = -9999; mouse.y = -9999;
-      if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
-    });
-    container.addEventListener('click', (e) => {
-      const rect = container.getBoundingClientRect();
-      triggerBlast(e.clientX - rect.left, e.clientY - rect.top);
-    });
-    window.addEventListener('resize', resize);
-
-    function animate() {
-      ctx.clearRect(0, 0, width, height);
-      particles.forEach((p) => p.update());
-      requestAnimationFrame(animate);
-    }
-
-    resize();
-    animate();
-  }
-
-  initFluidBox(document.getElementById('hero-particle-box'));
 </script>
 
 </body>
