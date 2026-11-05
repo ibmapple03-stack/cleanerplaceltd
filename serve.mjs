@@ -25,6 +25,8 @@ const mime = {
 const server = http.createServer((req, res) => {
   let urlPath = decodeURIComponent(req.url.split('?')[0]);
   if (urlPath === '/') urlPath = '/index.html';
+  // Match Vercel's cleanUrls: /deep-cleaning-yola serves deep-cleaning-yola.html
+  if (!path.extname(urlPath)) urlPath = urlPath.replace(/\/$/, '') + '.html';
 
   const filePath = path.join(root, urlPath);
 
